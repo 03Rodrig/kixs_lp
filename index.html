@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>KiX's</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!--LOGO Y MENUS-->
+    <nav class="topheader">
+      <a href="" class="logo">
+        <img height="30px" width="" src="img/logo.png" />
+      </a>
+      <ul class="Menu-Horizontal">
+        <li><a href="inicio">Inicio</a></li>
+        <li>
+          <a href=""> Marcas</a>
+          <ul class="Menu-Vertical">
+            <li>Nike</li>
+            <li>Adidas</li>
+            <li>New Balance</li>
+            <li>Asics</li>
+          </ul>
+        </li>
+        <li><a href="#conocenos">Conocenos</a></li>
+        <li><a href="#Contactanos">Contactanos</a></li>
+      </ul>
+    </nav>
+    <!--INICIO -->
+    <section class="Seccion-Inicio" id="inicio">
+      <div class="div-gral-inicio">
+        <div class="div-ini-texto">
+          <h2>LAS MEJORES MARCAS AHORA PARA TI</h2>
+          <p>
+            Nuestro mercado en tiempo real funciona igual que la bolsa de
+            valores: te permite comprar y vender los artículos más codiciados a
+            su verdadero precio de mercado.
+          </p>
+          <p>
+            Ya sea que se trate de un lanzamiento previo, una edición limitada
+            regional o un producto "agotado", nuestros millones de clientes en
+            más de 200 países le permiten conseguir fácilmente esos artículos
+            codiciados y difíciles de encontrar.
+          </p>
+        </div>
+        <div class="div-ini-img">
+          <img height="" width="" src="img/image1.png" alt="" />
+        </div>
+      </div>
+    </section>
+    <section class="Seccion-Conocenos" id="conocenos">
+      <div class="div-gral-conocenos">
+        <div class="div-cono-texto">
+          <h2>EL MERCADO CULTURAL ACTUAL</h2>
+          <p>
+            Nuestra misión es brindar acceso a los artículos más codiciados del
+            mundo de la manera más inteligente posible. Compra y vende las
+            zapatillas, ropa, electrónica, artículos de colección, cromos y
+            accesorios más populares.
+          </p>
+        </div>
+        <div class="div-cono-video">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/VnE7m8JI7MY?si=0upPOJJeTPF_qzzF"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </section>
+    <!--SECCION CONTACTANOS-->
+    <section class="seccion-formulario" id="Contactanos">
+      <div class="div-cont-formulario">
+        <h2>Formulario de Registro</h2>
+        <p>Complete todos los campos</p>
+        <form class="formulario">
+          <div class="campo">
+            <label for="nombre">Nombres Completos:</label>
+            <input
+              type="text"
+              id="nombre"
+              name="nombre"
+              placeholder="Ingrese sus nombres"
+            />
+          </div>
+          <!--MENU DESPLEGABLE-->
+          <div class="campo">
+            <label for="nombre">Pais:</label>
+            <select id="pais" name="pais">
+              <option value="">Seleccione un país</option>
+              <option value="Peru">Perú</option>
+              <option value="Brasil">Brasil</option>
+              <option value="Argentina">Argentina</option>
+            </select>
+          </div>
+          <!--CHECKBOX-->
+          <div class="campo">
+            <label>Preferencias:</label>
+            <ul class="lista-checkbox">
+              <li>
+                <label
+                  ><input
+                    type="checkbox"
+                    name="preferencias"
+                    value="marcas"
+                  />Nike</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input
+                    type="checkbox"
+                    name="preferencias"
+                    value="marcas"
+                  />Adidas</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input
+                    type="checkbox"
+                    name="preferencias"
+                    value="marcas"
+                  />New Balance</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input
+                    type="checkbox"
+                    name="preferencias"
+                    value="marcas"
+                  />Asics</label
+                >
+              </li>
+            </ul>
+          </div>
+          <!--RADIO BUTTOM-->
+          <div class="campo">
+            <label>Sexo:</label>
+            <ul class="lista-radio">
+              <li>
+                <label
+                  ><input
+                    type="radio"
+                    name="sexo"
+                    value="Masculino"
+                  />Masculino</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input
+                    type="radio"
+                    name="sexo"
+                    value="Femenino"
+                  />Femenino</label
+                >
+              </li>
+            </ul>
+          </div>
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+    </section>
+    <section id="footer">
+      <footer class="footer">
+        <div class="footer-container">
+          <!-- Logo y nombre de sitio -->
+          <div class="footer-brand">
+            <img src="img/logo.png" alt="Logo" class="footer-logo" />
+            <p>KiX's</p>
+            <small>© 2025 Todos los derechos reservados</small>
+          </div>
+
+          <!-- Enlaces legales -->
+          <div class="footer-links">
+            <h4>Legal</h4>
+            <a href="/Politicas PDF/politicas.pdf">Política de Privacidad</a>
+            <!-- Dentro de href llama a un documento pdf con la poltica-->
+            <a href="/Politicas PDF/politicas.pdf">Términos y Condiciones</a>
+            <!-- Dentro de href llama a un documento pdf con los terminos y condiciones-->
+            <a href="/Politicas PDF/politicas.pdf">Protección de Datos</a>
+          </div>
+
+          <!-- Redes sociales con íconos personalizados -->
+          <div class="footer-social">
+            <h4>Síguenos</h4>
+            <a href="#"
+              ><img
+                src="https://cdn-icons-png.flaticon.com/512/145/145802.png"
+                alt="Facebook"
+                class="social-icon"
+            /></a>
+            <a href="#"
+              ><img
+                src="https://cdn-icons-png.flaticon.com/512/145/145812.png"
+                alt="Instagram"
+                class="social-icon"
+            /></a>
+            <a href="#"
+              ><img
+                src="https://cdn-icons-png.flaticon.com/512/145/145807.png"
+                alt="LinkedIn"
+                class="social-icon"
+            /></a>
+            <a href="#"
+              ><img
+                src="https://cdn-icons-png.flaticon.com/512/145/145806.png"
+                alt="Twitter"
+                class="social-icon"
+            /></a>
+          </div>
+        </div>
+      </footer>
+    </section>
+  </body>
+</html>

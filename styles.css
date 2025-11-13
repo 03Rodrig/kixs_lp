@@ -1,0 +1,245 @@
+/*MENU*/
+.topheader {
+  position: fixed;
+  background-color: white;
+  width: 100%;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0 1.25rem;
+}
+
+.Menu-Horizontal {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+.Menu-Horizontal li a {
+  display: block;
+  padding: 0.938rem 1.25rem;
+  color: black;
+  text-decoration: none;
+  font-size: 1.25rem;
+}
+
+.Menu-Horizontal li a:hover {
+  color: red;
+}
+
+.Menu-Vertical {
+  padding: 0;
+  position: absolute;
+  display: none;
+  width: 11.25rem;
+  background-color: white;
+  font-size: 0.875rem;
+}
+
+.Menu-Horizontal li:hover .Menu-Vertical {
+  display: block;
+}
+
+.Menu-Vertical li {
+  font-size: 0.875rem;
+  color: blue;
+  list-style: none;
+}
+
+.Menu-Vertical li:hover {
+  color: green;
+}
+/*Seccion INICIO*/
+.Seccion-Inicio {
+  padding: 3.75rem 1.25rem;
+  background-color: white;
+}
+.div-gral-inicio {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 75rem;
+  margin: 0 auto;
+  gap: 2.5rem;
+}
+.div-ini-texto {
+  flex: 1;
+}
+.div-ini-texto h2 {
+  font-size: 2.25rem;
+  color: #b22621;
+  margin-bottom: 0.625rem;
+}
+.div-gral-inicio p {
+  color: black;
+}
+.div-ini-img {
+  flex: 1;
+}
+.div-ini-img img {
+  width: 100%;
+  max-width: 31.25rem;
+}
+/*Seccion CONOCENOS*/
+.Seccion-Conocenos {
+  padding: 3.75rem 1.25rem;
+  background-color: black;
+}
+.div-gral-conocenos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 75rem;
+  margin: 0 auto;
+  gap: 2.5rem;
+}
+
+.div-cono-texto h2 {
+  font-size: 2.25rem;
+  color: white;
+  margin-bottom: 0.625rem;
+}
+
+.div-cono-texto p {
+  color: white;
+  line-height: 1.6;
+}
+
+.div-cono-video {
+  flex: 1;
+}
+/*.div-cono-video iframe {
+  width: 100%;
+  max-width: 500px;
+}*/
+
+.seccion-formulario {
+  background-color: white;
+  padding: 2.5rem;
+  border: 0.188rem;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2.5rem;
+}
+
+.div-cont-formulario {
+  background-color: white;
+  padding: 1.875rem;
+  border: 0.125rem solid black;
+  border-radius: 0.625rem;
+  width: 100%;
+  max-width: 31.25rem;
+}
+.campo {
+  border: 0.094rem;
+  padding: 0.938rem;
+  margin-bottom: 0.938rem;
+  border-radius: 0.5rem;
+  background-color: white;
+}
+.formulario {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: black;
+}
+
+input[type="text"],
+select {
+  width: 100%;
+  padding: 0.625rem;
+  border: 0.063rem solid black;
+  border-radius: 0.313rem;
+}
+
+.campo li {
+  list-style: none;
+}
+
+button {
+  background-color: #b22621;
+  color: White;
+  border: 0.094rem solid black;
+  padding: 0.625rem 1.25rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+/* Footer general */
+.footer {
+  background-color: #222; /* Fondo oscuro para contraste */
+  color: white;
+  padding: 2rem 1rem;
+  font-family: "Roboto", sans-serif;
+}
+
+/* Contenedor flexible para 3 columnas */
+.footer-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 75rem;
+  margin: auto;
+  gap: 2rem;
+}
+
+/* Marca o logotipo */
+.footer-brand {
+  flex: 1;
+  min-width: 12.5rem;
+}
+
+.footer-logo {
+  width: 3.75rem;
+  height: auto;
+  margin-bottom: 0.5rem;
+}
+
+/* Enlaces legales */
+.footer-links {
+  flex: 1;
+  min-width: 12.5rem;
+}
+
+.footer-links a {
+  display: block;
+  color: #ccc;
+  text-decoration: none;
+  margin: 0.3rem 0;
+}
+
+.footer-links a:hover {
+  color: #fff;
+}
+
+/* Redes sociales con íconos */
+.footer-social {
+  flex: 1;
+  min-width: 12.5rem;
+}
+
+.social-icon {
+  width: 2rem;
+  height: 2rem;
+  margin-right: 0.5rem;
+  transition: transform 0.2s ease-in-out;
+}
+
+.social-icon:hover {
+  transform: scale(1.2);
+}
+
+/* Responsive para pantallas pequeñas */
+@media (max-width: 48rem) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-social img {
+    margin-bottom: 0.5rem;
+  }
+}
