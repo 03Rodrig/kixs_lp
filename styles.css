@@ -1,4 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Rambla:ital,wght@0,400;0,700;1,400;1,700&family=Science+Gothic:wght@100..900&display=swap");
 /*MENU*/
+
+body {
+  font-family: "Science Gothic", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings: "slnt" 0, "wdth" 100, "CTRS" 0;
+}
 .topheader {
   position: fixed;
   background-color: white;
@@ -8,6 +17,42 @@
   align-items: center;
   justify-content: space-around;
   padding: 0 1.25rem;
+}
+
+/* BOTÓN HAMBURGUESA (ESCONDE EN DESKTOP) */
+.menu-toggle {
+  display: none; /* Oculto por defecto */
+  font-size: 2rem; /* Tamaño del ícono hamburguesa */
+  background: none; /* Sin fondo */
+  border: none; /* Sin bordes */
+  cursor: pointer; /* Manito al pasar el mouse */
+  margin-right: 1rem; /* Espacio entre el borde derecho */
+}
+
+/* RESPONSIVE: MÓVILES */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block; /* Mostrar botón hamburguesa en móviles */
+    color: black;
+  }
+
+  .Menu-Horizontal {
+    display: none; /* Ocultar menú horizontal por defecto */
+    flex-direction: column; /* Mostrarlo en vertical al activarse */
+    width: 100%;
+    background-color: white;
+    position: absolute;
+    top: 5rem; /* Debajo del menú fijo */
+    left: 0;
+  }
+
+  .Menu-Horizontal.active {
+    display: flex; /* Mostrar menú al activar la clase */
+  }
+
+  .Menu-Horizontal li {
+    border-bottom: 1px solid #ccc; /* Líneas separadoras */
+  }
 }
 
 .Menu-Horizontal {
@@ -25,7 +70,7 @@
 }
 
 .Menu-Horizontal li a:hover {
-  color: red;
+  color: #b22621;
 }
 
 .Menu-Vertical {
@@ -43,12 +88,12 @@
 
 .Menu-Vertical li {
   font-size: 0.875rem;
-  color: blue;
+  color: black;
   list-style: none;
 }
 
 .Menu-Vertical li:hover {
-  color: green;
+  color: #b22621;
 }
 /*Seccion INICIO*/
 .Seccion-Inicio {
